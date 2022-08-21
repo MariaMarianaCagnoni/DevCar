@@ -69,7 +69,7 @@
     text-decoration: none;
  }
  nav ul li a:hover{
-    color: #00285f83;
+    color: #0c59c583;
  }
 
  nav ul button{
@@ -86,13 +86,13 @@
 
 nav ul button:hover{
     transition: background, color 0.6s;
-    background: black;
+    background:rgba(20, 10, 10, 0.11);
     color: white;
 }
 
-.content .header-block{
+.content .header-block {
    max-width: 1000px;
-   min-width: 200px;
+   min-width: 300px;
    height: 450px;
    background: var(--blue);
    border-radius: 8px;
@@ -103,4 +103,37 @@ nav ul button:hover{
    position: relative;
    z-index: 10;
    padding: 10px;
+}
+
+.header-block img{
+
+   width: 50%;
+   position: absolute;
+   right: 2%;
+   bottom: 2%;
+}
+
+.header-block .text{
+
+   position: absolute;
+   bottom: 30%;
+   left: 15%;
+}
+.header-block .text h2{
+   color: white;
+   margin-bottom: 20px;
+   text-align: right;
+   transform: translateX(-20px);
+
+   transition: transform 0.5s;
+}
+
+
+.header-block .text p{
+
+   max-width: 200px;
+   color:white;
+   text-align: right;
+
+
 }
